@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f2">
+  <meta name="description" content="A magical birthday experience made with love.">
+  <title>For Mommy — a little birthday magic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <div class="grain" aria-hidden="true"></div>
+    <div id="celebrationLayer" class="celebration-layer" aria-hidden="true"></div>
+
+    <header class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Back to the beginning">
+        <span class="brand-mark">✦</span>
+        <span>little <em>moment</em></span>
+      </a>
+      <nav class="nav-links" aria-label="Birthday sections">
+        <a href="#message">The note</a>
+        <a href="#candles">The wish</a>
+        <a href="#memories">Memories</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-button" id="shareButton" type="button" aria-label="Share this birthday page" title="Share this page">↗</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle color theme">◐</button>
+      </div>
+    </header>
+
+    <div class="journey-progress" role="region" aria-label="Experience progress">
+      <span class="progress-kicker">YOUR LITTLE JOURNEY</span>
+      <div class="progress-track"><span id="progressBar"></span></div>
+      <span id="progressLabel">beginning</span>
+    </div>
+
+    <main id="top">
+      <section class="hero section-pad" aria-labelledby="heroTitle">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+        <span class="float-shape shape-star-one" aria-hidden="true">✦</span>
+        <span class="float-shape shape-star-two" aria-hidden="true">✧</span>
+        <span class="float-shape shape-heart-one" aria-hidden="true">♡</span>
+        <span class="float-shape shape-dot-one" aria-hidden="true"></span>
+
+        <div class="hero-copy reveal is-visible">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A little celebration, made just for Mommy</p>
+          <h1 id="heroTitle">Happy<br><i>birthday Mommy</i></h1>
+          <p class="hero-name">Mommy <span class="name-star">✦</span></p>
+          <p class="hero-description">Janma den ko derrai derai Subakamana mero Mommy lai. Sadai Khusi hunu, aafnu khayal rhaknu </p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="startButton" type="button">Start the celebration <span>🎉</span></button>
+            <a class="text-link" href="#message">There is a note for you <span>↓</span></a>
+          </div>
+          <div class="scroll-cue"><span class="scroll-cue-dot"></span><span>scroll to unwrap</span></div>
+        </div>
+
+        <div class="hero-art reveal is-visible reveal-delay" role="img" aria-label="An illustrated birthday cake with three candles">
+          <div class="sun-halo" aria-hidden="true"></div>
+          <div class="cake-shadow" aria-hidden="true"></div>
+          <div class="cake-plate"><span></span></div>
+          <div class="cake cake-large">
+            <div class="cake-top"></div>
+            <div class="frosting frosting-top"><i></i><i></i><i></i><i></i></div>
+            <div class="cake-body"><span class="cake-stripe"></span><span class="cake-sprinkle sprinkle-a">•</span><span class="cake-sprinkle sprinkle-b">•</span><span class="cake-sprinkle sprinkle-c">•</span></div>
+            <div class="frosting frosting-bottom"><i></i><i></i><i></i></div>
+            <div class="cake-berry berry-one"></div><div class="cake-berry berry-two"></div>
+            <div class="candle candle-left"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></div>
+            <div class="candle candle-mid"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></div>
+            <div class="candle candle-right"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></div>
+          </div>
+          <span class="art-caption caption-left">made with<br><em>extra sprinkles</em></span>
+          <span class="art-caption caption-right">for your<br><em>brightest year</em></span>
+        </div>
+      </section>
+
+      <section class="intro-strip section-pad reveal" aria-label="Birthday note introduction">
+        <p><span>01</span> first, a few words from the heart</p>
+        <span class="strip-line"></span>
+        <p class="strip-aside">keep going, there is magic ahead <span>✦</span></p>
+      </section>
+
+      <section class="message-section section-pad" id="message" aria-labelledby="messageTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> words worth keeping</p>
+          <h2 id="messageTitle">A message<br><i>for Mommy.</i></h2>
+          <p class="section-lede">Some people make ordinary days feel like tiny celebrations. You are one of them.</p>
+        </div>
+        <div class="message-layout">
+          <div class="message-aside reveal">
+            <span class="aside-number">01 / 05</span>
+            <p>Press play on the words.<br>Take your time.</p>
+            <span class="aside-squiggle">〰</span>
+          </div>
+          <article class="message-card reveal reveal-delay" aria-live="polite">
+            <div class="card-stamp">FOR<br>MOMMY <span>♡</span></div>
+            <span class="quote-mark">“</span>
+            <p class="message-text" id="messageText">You have this rare way of making a room feel more like home. I hope this next trip around the sun brings you slow mornings, loud laughs, unexpected flowers, and every good thing you’ve been quietly wishing for.</p>
+            <p class="message-signoff">with all the love <span>—</span> always</p>
+            <button class="button button-dark" id="readMessageButton" type="button">Read my message <span>→</span></button>
+            <div class="card-sparkle sparkle-one">✦</div><div class="card-sparkle sparkle-two">✧</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="wish-section section-pad" id="candles" aria-labelledby="wishTitle">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> the birthday ritual <span class="eyebrow-line"></span></p>
+          <h2 id="wishTitle">Make a wish,<br><i>then blow.</i></h2>
+          <p class="section-lede">Three tiny flames. One very big wish.<br>Use your microphone or tap each candle to send it out into the universe.</p>
+        </div>
+        <div class="candle-stage reveal reveal-delay">
+          <div class="stage-orb orb-pink"></div><div class="stage-orb orb-yellow"></div>
+          <div class="candle-instruction"><span class="pulse-dot"></span><span id="candleStatus">the candles are listening</span></div>
+          <div class="interactive-cake" role="group" aria-label="Interactive birthday cake. Click a flame to blow out a candle.">
+            <div class="cake-plate interactive-plate"><span></span></div>
+            <div class="cake interactive-cake-body">
+              <div class="cake-top"></div>
+              <div class="frosting frosting-top"><i></i><i></i><i></i><i></i></div>
+              <div class="cake-body"><span class="cake-stripe"></span><span class="cake-sprinkle sprinkle-a">•</span><span class="cake-sprinkle sprinkle-b">•</span><span class="cake-sprinkle sprinkle-c">•</span></div>
+              <div class="frosting frosting-bottom"><i></i><i></i><i></i></div>
+              <div class="candle interactive-candle" data-candle="0" tabindex="0" role="button" aria-label="Candle one, lit"><span class="smoke"></span><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></div>
+              <div class="candle interactive-candle candle-mid" data-candle="1" tabindex="0" role="button" aria-label="Candle two, lit"><span class="smoke"></span><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></div>
+              <div class="candle interactive-candle candle-right" data-candle="2" tabindex="0" role="button" aria-label="Candle three, lit"><span class="smoke"></span><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></div>
+            </div>
+          </div>
+          <div class="candle-tools">
+            <button class="button button-primary small-button" id="micButton" type="button"><span>◉</span> Try microphone</button>
+            <button class="button button-ghost small-button" id="tapButton" type="button"><span>✧</span> Tap to blow out</button>
+          </div>
+          <p class="mic-status" id="micStatus">Microphone access is optional — your wish works either way.</p>
+          <div class="wish-gate" id="wishGate" hidden>
+            <span class="gate-sparkle">✦</span>
+            <p>All the candles are out. Hold your wish close.</p>
+            <button class="button button-dark" id="wishButton" type="button">Make a Wish <span>✨</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="memories-section section-pad" id="memories" aria-labelledby="memoriesTitle">
+        <div class="section-heading split-heading reveal">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> little pieces of happy</p><h2 id="memoriesTitle">The memory<br><i>drawer.</i></h2></div>
+          <div class="heading-right"><p>Save the moments you never want to lose. Add a photo, a date, and the little story behind it.</p><button class="button button-primary small-button" id="addMemoryButton" type="button">Add a memory <span>＋</span></button></div>
+        </div>
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+        <div class="gallery-empty" id="galleryEmpty" hidden><span>✦</span><p>Your memory drawer is waiting for its first little story.</p><button class="text-link" id="emptyAddMemory" type="button">Add one now <span>→</span></button></div>
+      </section>
+
+      <section class="guestbook-section section-pad" id="guestbook" aria-labelledby="guestbookTitle">
+        <div class="guestbook-header reveal">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> leave a little light</p><h2 id="guestbookTitle">Leave a<br><i>wish.</i></h2></div>
+          <p class="guestbook-lede">Add your name to Mommy's wall of good things. Every wish stays right here, like a tiny paper note tucked into a pocket.</p>
+        </div>
+        <div class="guestbook-layout">
+          <form class="wish-form reveal" id="wishForm">
+            <div class="form-topline"><span>✉</span><span>new note</span></div>
+            <label for="guestName">Barshad</label><input id="guestName" name="guestName" type="text" maxlength="32" placeholder="e.g. Maya" required>
+            <label for="guestMessage">All the good luck and happiness going your way <span class="char-count" id="charCount">0 / 180</span></label><textarea id="guestMessage" name="guestMessage" maxlength="180" rows="5" placeholder="A little birthday magic goes a long way..." required></textarea>
+            <label>Choose a little something</label><div class="sticker-picker" role="radiogroup" aria-label="Choose a sticker">
+              <button class="sticker-option selected" type="button" data-sticker="✦" role="radio" aria-checked="true">✦</button><button class="sticker-option" type="button" data-sticker="♡" role="radio" aria-checked="false">♡</button><button class="sticker-option" type="button" data-sticker="✿" role="radio" aria-checked="false">✿</button><button class="sticker-option" type="button" data-sticker="🎈" role="radio" aria-checked="false">🎈</button><button class="sticker-option" type="button" data-sticker="☀" role="radio" aria-checked="false">☀</button>
+            </div>
+            <button class="button button-dark full-button" type="submit">Pin my wish <span>↗</span></button>
+            <p class="form-note">Your note is saved on this device.</p>
+          </form>
+          <div class="wish-wall reveal reveal-delay" id="wishWall" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="surprise-section section-pad" id="surprise" aria-labelledby="surpriseTitle" data-locked="true">
+        <div class="surprise-lock" id="surpriseLock">
+          <span class="lock-icon">✦</span><p>the last little surprise is tucked away</p><span class="lock-rule"></span><small>blow out all three candles to unlock</small>
+        </div>
+        <div class="surprise-content" hidden>
+          <p class="eyebrow"><span class="eyebrow-line"></span> one last thing</p>
+          <h2 id="surpriseTitle">Open your<br><i>little gift.</i></h2>
+          <p class="surprise-copy">Because you deserve a year that feels like : warm, bright, and full of joy.</p>
+          <button class="gift-box" id="giftBox" type="button" aria-label="Open your birthday gift">
+            <span class="gift-glow"></span><span class="gift-lid"></span><span class="gift-body"></span><span class="gift-ribbon ribbon-v"></span><span class="gift-ribbon ribbon-h"></span><span class="gift-bow bow-left"></span><span class="gift-bow bow-right"></span><span class="gift-spark spark-a">✦</span><span class="gift-spark spark-b">✧</span>
+          </button>
+          <p class="gift-hint">tap the box to open it <span>↓</span></p>
+          <div class="final-message" id="finalMessage" hidden>
+            <span class="final-kicker">and the wish is...</span><h3>You are the best<br><i>Mommy.</i></h3><p>Happy Birthday, Mommy. Keep being exactly who you are — the world needs your kind of magic.</p><button class="button button-primary" id="replayButton" type="button">Replay the magic <span>↻</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-pad"><div class="footer-mark">✦</div><p>made for one very special person</p><div class="footer-year">2026<span>♡</span></div></footer>
+  </div>
+
+  <aside class="music-player" id="musicPlayer" aria-label="Birthday music player">
+    <div class="music-disc"><span class="disc-note">♪</span></div>
+    <div class="music-meta"><span class="music-label">NOW PLAYING</span><strong>birthday in bloom</strong><div class="visualizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <button class="player-button" id="musicPlayButton" type="button" aria-label="Play birthday music">▶</button>
+    <button class="player-button player-mute" id="musicMuteButton" type="button" aria-label="Mute birthday music">🔊</button>
+    <div class="music-progress"><span id="musicProgress"></span></div>
+  </aside>
+  <button class="music-fallback" id="musicFallback" type="button">Play birthday music <span>🎵</span></button>
+
+  <div class="modal-backdrop" id="memoryModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="memoryModalTitle"><button class="modal-close" data-close-modal="memoryModal" type="button" aria-label="Close">×</button><p class="eyebrow"><span class="eyebrow-line"></span> save a moment</p><h2 id="memoryModalTitle">Add to the<br><i>memory drawer.</i></h2><form id="memoryForm"><label class="upload-drop" for="memoryFile"><span class="upload-icon">＋</span><strong id="uploadLabel">Choose a photo</strong><small>JPG, PNG or WEBP · max 5MB</small><input id="memoryFile" type="file" accept="image/jpeg,image/png,image/webp" required></label><div class="preview-wrap" id="memoryPreviewWrap" hidden><img id="memoryPreview" alt="Selected memory preview"></div><label for="memoryCaption">Caption <span>(optional)</span></label><input id="memoryCaption" type="text" maxlength="80" placeholder="the summer we stayed up too late"><label for="memoryDate">Date <span>(optional)</span></label><input id="memoryDate" type="date"><button class="button button-dark full-button" type="submit">Save this memory <span>♡</span></button><p class="error-note" id="memoryError" role="alert"></p></form></div>
+  </div>
+
+  <div class="modal-backdrop lightbox-backdrop" id="lightbox" hidden><div class="lightbox" role="dialog" aria-modal="true" aria-label="Memory viewer"><button class="modal-close" data-close-modal="lightbox" type="button" aria-label="Close">×</button><button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Previous memory">←</button><img id="lightboxImage" alt=""><button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next memory">→</button><div class="lightbox-caption"><strong id="lightboxCaption"></strong><span id="lightboxDate"></span></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✦</span><span id="toastText">Link copied</span></div>
+  <script src="script.js"></script>
+</body>
+</html>
